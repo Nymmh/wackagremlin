@@ -1,0 +1,10 @@
+$breakpoint--3: 360px;
+$breakpoint--5: 540px;
+$breakpoint--7: 780px;
+$breakpoint--9: 960px;
+
+@mixin min-width($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
