@@ -20,7 +20,7 @@ const rowLimit = ref<number>(4);
 const holeLimit = ref<number>(0);
 const gremlinLocation = ref<number>(-1);
 const waitSrc = ref<string>(wait1);
-const wacks = ref<number>(0);
+const whacks = ref<number>(0);
 
 const deadImages = [dead1, dead2];
 const waitImages = [wait1, wait2];
@@ -37,7 +37,7 @@ const handleClick = (i: number) => {
   if (i === gremlinLocation.value) {
     clickEnabled.value = false;
     let deadImageIndex = randomNumber(0, deadImages.length - 1);
-    wacks.value++;
+    whacks.value++;
     waitSrc.value = deadImages[deadImageIndex];
 
     setTimeout(() => {
@@ -65,7 +65,7 @@ onMounted(() => {
 <template>
   <div class="home__wrapper">
     <div class="home">
-      <p class="home__wacks">Wacks: {{ wacks }}</p>
+      <p class="home__whacks">whacks: {{ whacks }}</p>
       <div v-for="i in holeLimit" :key="i" class="home__hit-box-wrapper">
         <div class="home__hit-box" @click="handleClick(i)">
           <div v-if="gremlinLocation === i" class="home__gremlin-wrapper">
@@ -94,7 +94,7 @@ onMounted(() => {
     max-width: 1366px;
   }
 
-  &__wacks {
+  &__whacks {
     position: absolute;
     text-align: center;
     width: 100%;
