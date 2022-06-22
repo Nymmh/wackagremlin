@@ -1,5 +1,5 @@
 {
-  "name": "wackagremlin",
+  "name": "whackagremlin",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nymmh/wackagremlin.git"
+    "url": "git+https://github.com/Nymmh/whackagremlin.git"
   },
   "author": "Nymmh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nymmh/wackagremlin/issues"
+    "url": "https://github.com/Nymmh/whackagremlin/issues"
   },
-  "homepage": "https://github.com/Nymmh/wackagremlin#readme",
+  "homepage": "https://github.com/Nymmh/whackagremlin#readme",
   "dependencies": {
     "@vueuse/head": "^0.7.6",
     "pinia": "^2.0.14",
